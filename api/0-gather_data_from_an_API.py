@@ -2,6 +2,7 @@
 """Module"""
 
 import requests
+
 import sys
 
 
@@ -9,7 +10,8 @@ import sys
 
 if __name__ == '__main__':
     user_id = sys.argv[1]
-    user_url = "https://jsonplaceholder.typicode.com/users/{}" \
+
+user_url = "https://jsonplaceholder.typicode.com/users/{}" \
         .format(user_id)
     todos_url = "https://jsonplaceholder.typicode.com/users/{}/todos/" \
         .format(user_id)
